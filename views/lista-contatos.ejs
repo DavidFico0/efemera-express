@@ -1,0 +1,22 @@
+<%- include("./partials/header") %> 
+
+<div class="container" style="margin-top: 20px;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Contato</th>
+                <th>Email</th>
+                <th>Mensagem</th>
+            </tr>
+        </thead>
+        <% for(let lista of listaContatos) { %>
+            <tr>
+                <td><%= lista.nome %></td>
+                <td><%= lista.email %></td>
+                <td><%= lista.mensagem %></td>
+            </tr>
+        <% } %> 
+    </table>
+</div>
+
+<%- include("./partials/footer") %> 
